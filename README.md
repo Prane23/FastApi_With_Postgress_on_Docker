@@ -56,6 +56,7 @@ Add student → POST /students/
 List students → GET /students/
 
 ## [Swagger docs](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png)
+<img width="1317" height="823" alt="image" src="https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png" />
 
 
 
