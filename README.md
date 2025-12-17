@@ -55,6 +55,8 @@ ReDoc docs: http://localhost:8000/redoc
 Add student → POST /students/
 List students → GET /students/
 
+<img width="1562" height="880" alt="image" src="https://github.com/user-attachments/assets/a06de045-ce5f-4232-9f76-dd448b765107" />
+
 📖 Notes
 Default database connection is configured in core/database.py.
 Update docker-compose.yml with your own Postgres credentials if needed.
