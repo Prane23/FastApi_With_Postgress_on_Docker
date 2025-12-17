@@ -68,5 +68,12 @@ List students → GET /students/
 Default database connection is configured in core/database.py.
 Update docker-compose.yml with your own Postgres credentials if needed.
 
+
+---
+
+✅ This version uses the **relative path** (`assets/fastapi_postgress_docker.png`) instead of the long GitHub URL. As long as the image file exists in your repo under `/assets`, GitHub will render it correctly in the README.  
+
+Would you like me to also add a **“Demo GIF” section** so you can show the API in action (e.g., hitting endpoints with Swagger UI)? That often makes READMEs even more engaging.
+
 👤 Author
 Created by Prane23.
