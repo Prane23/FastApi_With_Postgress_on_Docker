@@ -1,5 +1,10 @@
 # FastAPI with PostgreSQL on Docker
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-teal?logo=fastapi)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-blue?logo=postgresql)
+![Docker](https://img.shields.io/badge/Docker-Compose-lightblue?logo=docker)
+
 A starter template for building and running a **FastAPI** application with a **PostgreSQL** database inside Docker.  
 This project demonstrates a clean architecture with separate modules for models, schemas, CRUD operations, and database configuration.
 
@@ -58,6 +63,7 @@ List students → GET /students/
 ## [Swagger docs](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png)
 <img width="1317" height="823" alt="image" src="https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png" />
 
+![FastAPI with Postgres on Docker](assets/fastapi_postgress_docker.png)
 
 
 
