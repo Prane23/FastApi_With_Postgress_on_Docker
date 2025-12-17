@@ -41,13 +41,9 @@ FastApi_With_Postgress_on_Docker/
   cd FastApi_With_Postgress_on_Docker
 2. Start services with Docker Compose
   docker compose up --build
-
-This will spin up:
-
-fastapi_app → FastAPI backend
-
-db → PostgreSQL database
-
+  This will spin up:
+  fastapi_app → FastAPI backend
+  db → PostgreSQL database
 3. Access the app
 API root: http://localhost:8000
 Swagger docs: http://localhost:8000/docs
@@ -55,10 +51,7 @@ ReDoc docs: http://localhost:8000/redoc
 
 🧩 Example Endpoints
 Add student → POST /students/
-
 List students → GET /students/
-
-Get student by ID → GET /students/{id}
 
 📖 Notes
 Default database connection is configured in core/database.py.
