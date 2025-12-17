@@ -56,6 +56,7 @@ Add student → POST /students/
 List students → GET /students/
 
 <img width="1562" height="880" alt="image" src="https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png?raw=true" />
+ <img width="1317" height="823" alt="image" src="https://github.com/user-attachments/assets/372aa6fc-9587-4015-acb7-edf4a6075278" />
 
 📖 Notes
 Default database connection is configured in core/database.py.
