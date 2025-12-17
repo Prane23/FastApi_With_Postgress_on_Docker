@@ -61,8 +61,6 @@ Add student → POST /students/
 List students → GET /students/
 
 ## [Swagger docs](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png)
-![FastAPI with Postgres on Docker](assets/fastapi_postgress_docker.png)
-![FastAPI with Postgres on Docker](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png?raw=true)
 
 📖 Notes
 Default database connection is configured in core/database.py.
