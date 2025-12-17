@@ -58,6 +58,16 @@ List students → GET /students/
 ![Swagger docs](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png?raw=true)
 ![Archtecture Diagram](https://github.com/user-attachments/assets/3afdf77a-da9e-43c6-9542-b7c9b9f221af)
 
+## Data ingestion
+- Data ingestion into Azure Data Lake using Azure Data Factory 
+- <img width="1317" height="823" alt="image" src="https://github.com/user-attachments/assets/372aa6fc-9587-4015-acb7-edf4a6075278" />
+
+
+## 🧩 Architecture Diagram
+
+![Archtecture Diagram](https://github.com/user-attachments/assets/3afdf77a-da9e-43c6-9542-b7c9b9f221af)
+
+
 📖 Notes
 Default database connection is configured in core/database.py.
 Update docker-compose.yml with your own Postgres credentials if needed.
