@@ -65,6 +65,7 @@ List students → GET /students/
 
 ![FastAPI with Postgres on Docker](assets/fastapi_postgress_docker.png)
 
+![FastAPI with Postgres on Docker](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png?raw=true)
 
 
 📖 Notes
