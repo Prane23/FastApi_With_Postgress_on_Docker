@@ -12,9 +12,11 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="CRUD API", description="FastAPI CRUD with Swagger", version="1.0")
 
+#endpoint to check if the API is running
 @app.get("/")
 def status():
     return {"status": "ok"}
+
 
 
 def get_db():
@@ -58,3 +60,14 @@ def list_students(db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=500,
             detail=f"An error occurred while fetching students: {str(e)}" )
+    
+        
+@app.get("/student/{id}")
+def get_student_by_id(id: int, db: Session = Depends(get_db)):
+    try:
+        student = crud.get_student(db, id)
+        if student is None:
+            raise HTTPException(status_code=404, detail="Student not found")
+        return student
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error fetching student: {str(e)}")   
