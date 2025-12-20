@@ -71,3 +71,13 @@ def get_student_by_id(id: int, db: Session = Depends(get_db)):
         return student
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error fetching student: {str(e)}")   
+    
+
+@app.put("/students/{student_id}")
+def update_student(id: int, student: schemas.StudentUpdate, db: Session = Depends(get_db)):
+    updated_student = crud.update_student(db, id, student)
+
+    if not updated_student:
+        raise HTTPException(status_code=404, detail="Student not found")
+
+    return updated_student

@@ -14,3 +14,18 @@ def create_student(db: Session, student: StudentCreate):
     db.commit()
     db.refresh(db_student)
     return db_student
+
+def update_student(db: Session, id: int, student_data: update_student):
+    student = db.query(Student).filter(Student.id == id).first()
+
+    if not student:
+        return None
+
+    update_data = student_data.dict(exclude_unset=True)
+
+    for key, value in update_data.items():
+        setattr(student, key, value)
+
+    db.commit()
+    db.refresh(student)
+    return student
