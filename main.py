@@ -73,7 +73,7 @@ def get_student_by_id(id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail=f"Error fetching student: {str(e)}")   
     
 
-@app.put("/students/{student_id}")
+@app.put("/students/{id}")
 def update_student(id: int, student: schemas.StudentUpdate, db: Session = Depends(get_db)):
     updated_student = crud.update_student(db, id, student)
 
@@ -81,3 +81,12 @@ def update_student(id: int, student: schemas.StudentUpdate, db: Session = Depend
         raise HTTPException(status_code=404, detail="Student not found")
 
     return updated_student
+
+@app.delete("/students/{id}")
+def delete_student(id: int, db: Session = Depends(get_db)):
+    deleted = crud.delete_student(db, id)
+
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Student not found")
+
+    return {"message": "Student deleted successfully"}
