@@ -1,8 +1,0 @@
-services:
-  web:
-    build: .              # looks for Dockerfile in current folder
-    container_name: fastapi_app
-    ports:
-      - "8000:8000"
-    environment:
-      DATABASE_URL: postgresql://postgres:postgres@host.docker.internal:5432/mydatabase
