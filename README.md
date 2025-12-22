@@ -102,7 +102,7 @@ CI/CD pipeline
 Unit tests with PyTest
 
 ## [Swagger docs](https://raw.githubusercontent.com/Prane23/FastApi_With_Postgress_on_Docker/refs/heads/main/assets/fastapi_postgress_docker.png)
-![Project Screenshot](assets/fastapi_postgress_docker.png)
+![FastAPI with Postgres](assets/fastapi_postgress_docker.PNG)
 
 📖 Notes
 Default database connection is configured in core/database.py.
