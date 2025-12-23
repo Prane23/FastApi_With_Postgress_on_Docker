@@ -1,4 +1,3 @@
-# FastAPI with PostgreSQL on Docker
 
 # FastAPI with PostgreSQL on Docker
 
@@ -27,6 +26,10 @@ Key highlights:
 
 ---
 
+# Swagger Docs
+
+![FastAPI Screenshot](assets/fastapi_postgress_docker.png)
+
 ## 📂 Project Structure
 
 ```text
@@ -46,6 +49,7 @@ FastApi_With_Postgress_on_Docker/
 ├── Dockerfile          # FastAPI container
 ├── docker-compose.yml  # Postgress container
 └── requirements.txt    # Packages needed for fastapi
+
 
 ⚙️ Setup & Run
 
