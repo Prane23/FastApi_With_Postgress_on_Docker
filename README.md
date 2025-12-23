@@ -93,6 +93,7 @@ FastApi_With_Postgress_on_Docker/
 ![FastAPI with Postgres](assets/fastapi_postgress_docker.png)
 
 🧩 Example API Endpoints
+
 ✅ Create Student POST /students/
 ✅ Get All Students GET /students/
 ✅ Get Student by ID GET /students/{id}
@@ -113,7 +114,7 @@ Pagination & filtering
 CI/CD pipeline
 
 📖 Notes
-Default database connection is configured in core/database.py.
-Update docker-compose.yml with your own Postgres credentials if needed.
+#### Default database connection is configured in core/database.py.
+#### Update docker-compose.yml with your own Postgres credentials if needed.
 ---
 
