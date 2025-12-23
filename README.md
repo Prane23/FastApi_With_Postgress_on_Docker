@@ -25,9 +25,9 @@ cd FastApi_With_Postgress_on_Docker
 
 2️⃣ Create a .env file
 Create a .env file in the project root:
-DATABASE_URL=postgresql://postgres:postgres@db:5432/mydatabase
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres
+DATABASE_URL=postgresql://{username}:{password}@db:5432/mydatabase
+POSTGRES_USER={username}
+POSTGRES_PASSWORD={password}
 POSTGRES_DB=mydatabase
 
 3️⃣ Build & Run with Docker
