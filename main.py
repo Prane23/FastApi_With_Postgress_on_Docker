@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from fastapi import FastAPI, HTTPException, Depends   
 from pydantic import BaseModel
 
@@ -7,6 +10,9 @@ from core import crud
 from core.database import Base, SessionLocal,engine
 from schemas import schemas
 from models.models import Student
+
+
+
 
 Base.metadata.create_all(bind=engine)
 

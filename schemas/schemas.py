@@ -1,4 +1,3 @@
-
 from typing import Optional
 from pydantic import BaseModel
 
@@ -8,17 +7,22 @@ class StudentBase(BaseModel):
     age: int
     grade: str
 
+
 # For creating a student 
 class StudentCreate(StudentBase):
     pass
+
 
 # For returning a student (includes ID)
 class Student(StudentBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    model_config = {
+        "from_attributes": True
+    }
 
+
+# For partial updates
 class StudentUpdate(BaseModel):
     name: Optional[str] = None
     age: Optional[int] = None

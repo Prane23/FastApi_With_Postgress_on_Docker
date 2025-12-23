@@ -1,0 +1,10 @@
+
+--Run dbContainer 
+
+docker compose -f dbContainer.yaml up -d
+
+-compose fast api 
+
+docker compose down --remove-orphans
+docker compose build
+docker compose up
