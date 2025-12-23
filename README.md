@@ -12,20 +12,54 @@ This project demonstrates a clean, production‑ready setup for building, runnin
 #### Docker Desktop installed
 #### Python 3.10+ (optional for local development)
 #### Git
+⚙️ Prerequisites
+Before running this project, ensure you have:
+Docker Desktop installed
+Python 3.10+ (optional for local development)
+Git
 
-🛠️ Setup Instructions
 1️⃣ Clone the repository
+
 git clone https://github.com/Prane23/FastApi_With_Postgress_on_Docker.git
 cd FastApi_With_Postgress_on_Docker
+
 2️⃣ Create a .env file
 Create a .env file in the project root:
 DATABASE_URL=postgresql://postgres:postgres@db:5432/mydatabase
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=mydatabase
+
 3️⃣ Build & Run with Docker
 docker compose up --build
 
+4️⃣ Access the API
+Once running:
+
+URL	Description
+http://localhost:8000/docs	Swagger UI
+http://localhost:8000/redoc	ReDoc documentation
+http://localhost:8000/students	Student API endpoints
+
+🧪 Running Locally (Without Docker)
+#### Install dependencies
+python -m pip install -r requirements.txt
+#### Load environment variables
+Add this to main.py:
+from dotenv import load_dotenv
+load_dotenv()
+#### Start FastAPI
+uvicorn app.main:app --reload
+
+🧰 Useful Docker Commands
+#Stop containers:
+docker compose down
+#Stop & remove volumes:
+docker compose down --volumes
+#Rebuild without cache:
+docker compose build --no-cache
+#View logs:
+docker logs fastapi_app
 
 
 🚀 Features
@@ -34,8 +68,6 @@ docker compose up --build
 - SQLAlchemy ORM models and Pydantic schemas
 - Modular project layout (`core/`, `models/`, `schemas/`, `crud.py`, `main.py`)
 - Docker Compose for easy orchestration
-
----
 
 ## 📂 Project Structure
 
@@ -74,11 +106,27 @@ API root: http://localhost:8000
 Swagger docs: http://localhost:8000/docs
 ReDoc docs: http://localhost:8000/redoc
 
-🧩 Example Endpoints
-Add student → POST /students/
-List students → GET /students/
+🧩 Example API Endpoints
+✅ Create Student POST /students/
+✅ Get All Students GET /students/
+✅ Get Student by ID GET /students/{id}
+✅ Update Student PUT /students/{id}
+✅ Delete Student DELETE /students/{id}
 
-## [Swagger docs](https://github.com/Prane23/FastApi_With_Postgress_on_Docker/blob/main/assets/fastapi_postgress_docker.png)
+🛠 Tech Stack
+FastAPI — async Python web framework
+PostgreSQL — relational database
+Docker Compose — service orchestration
+SQLAlchemy ORM — database modeling
+Pydantic — data validation
+
+✅ Future Enhancements
+Alembic migrations
+JWT authentication
+Pagination & filtering
+CI/CD pipeline
+
+## [Swagger docs]
 
 📖 Notes
 Default database connection is configured in core/database.py.
