@@ -89,23 +89,6 @@ FastApi_With_Postgress_on_Docker/
 ├── docker-compose.yml  # Postgress container
 └── requirements.txt    # Packages needed for fastapi
 
-⚙️ Setup & Run
-
-1. Clone the repo
-  git clone https://github.com/Prane23/FastApi_With_Postgress_on_Docker.git
-  cd FastApi_With_Postgress_on_Docker
-
-2. Start services with Docker Compose
-  docker compose up --build
-  This will spin up:
-  fastapi_app → FastAPI backend
-  db → PostgreSQL database
-
-3. Access the app
-API root: http://localhost:8000
-Swagger docs: http://localhost:8000/docs
-ReDoc docs: http://localhost:8000/redoc
-
 🧩 Example API Endpoints
 ✅ Create Student POST /students/
 ✅ Get All Students GET /students/
