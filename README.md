@@ -70,24 +70,27 @@ docker logs fastapi_app
 - Docker Compose for easy orchestration
 
 ## 📂 Project Structure
-
-```text
+```
 FastApi_With_Postgress_on_Docker/
 │
 ├── core/            # Database configuration
 │   └── database.py
-│
+│   └── crud.py
+│ 
 ├── models/          # SQLAlchemy models
 │   └── models.py
 │
 ├── schemas/         # Pydantic schemas
 │   └── schemas.py
 │
-├── crud.py             # CRUD operations
+             # CRUD operations
 ├── main.py             # FastAPI entrypoint
 ├── Dockerfile          # FastAPI container
-├── docker-compose.yml  # Postgress container
+├── dbContainer.yml  # Postgress container
 └── requirements.txt    # Packages needed for fastapi
+```
+## [Swagger docs]
+![FastAPI with Postgres](assets/fastapi_postgress_docker.png)
 
 🧩 Example API Endpoints
 ✅ Create Student POST /students/
@@ -108,8 +111,6 @@ Alembic migrations
 JWT authentication
 Pagination & filtering
 CI/CD pipeline
-
-## [Swagger docs]
 
 📖 Notes
 Default database connection is configured in core/database.py.
