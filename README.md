@@ -1,16 +1,34 @@
-# FastAPI with PostgreSQL on Docker
+📘 FastAPI + PostgreSQL + Docker
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-teal?logo=fastapi)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15%2B-blue?logo=postgresql)
 ![Docker](https://img.shields.io/badge/Docker-Compose-lightblue?logo=docker)
 
-A starter template for building and running a **FastAPI** application with a **PostgreSQL** database inside Docker.  
-This project demonstrates a clean architecture with separate modules for models, schemas, CRUD operations, and database configuration.
+A fully containerized FastAPI application running with PostgreSQL using Docker Compose.
+This project demonstrates a clean, production‑ready setup for building, running, and deploying a backend API with a relational database.
 
----
+⚙️ Prerequisites
+#### Docker Desktop installed
+#### Python 3.10+ (optional for local development)
+#### Git
 
-## 🚀 Features
+🛠️ Setup Instructions
+1️⃣ Clone the repository
+git clone https://github.com/Prane23/FastApi_With_Postgress_on_Docker.git
+cd FastApi_With_Postgress_on_Docker
+2️⃣ Create a .env file
+Create a .env file in the project root:
+DATABASE_URL=postgresql://postgres:postgres@db:5432/mydatabase
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=mydatabase
+3️⃣ Build & Run with Docker
+docker compose up --build
+
+
+
+🚀 Features
 - FastAPI backend with automatic interactive API docs (`/docs` and `/redoc`)
 - PostgreSQL database running in a Docker container
 - SQLAlchemy ORM models and Pydantic schemas
