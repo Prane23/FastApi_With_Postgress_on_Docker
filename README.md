@@ -17,9 +17,8 @@ Before running this project, ensure you have:
 Docker Desktop installed
 Python 3.10+ (optional for local development)
 Git
-
+```
 1️⃣ Clone the repository
-
 git clone https://github.com/Prane23/FastApi_With_Postgress_on_Docker.git
 cd FastApi_With_Postgress_on_Docker
 
@@ -35,12 +34,13 @@ docker compose up --build
 
 4️⃣ Access the API
 Once running:
-
+```
+```
 URL	Description
 http://localhost:8000/docs	Swagger UI
 http://localhost:8000/redoc	ReDoc documentation
 http://localhost:8000/students	Student API endpoints
-
+```
 🧪 Running Locally (Without Docker)
 #### Install dependencies
 python -m pip install -r requirements.txt
@@ -60,7 +60,6 @@ docker compose down --volumes
 docker compose build --no-cache
 #View logs:
 docker logs fastapi_app
-
 
 🚀 Features
 - FastAPI backend with automatic interactive API docs (`/docs` and `/redoc`)
@@ -93,26 +92,28 @@ FastApi_With_Postgress_on_Docker/
 ![FastAPI with Postgres](assets/fastapi_postgress_docker.png)
 
 🧩 Example API Endpoints
-
+```
 ✅ Create Student POST /students/
 ✅ Get All Students GET /students/
 ✅ Get Student by ID GET /students/{id}
 ✅ Update Student PUT /students/{id}
 ✅ Delete Student DELETE /students/{id}
-
+```
 🛠 Tech Stack
-FastAPI — async Python web framework
-PostgreSQL — relational database
-Docker Compose — service orchestration
-SQLAlchemy ORM — database modeling
-Pydantic — data validation
-
+```
+- FastAPI — async Python web framework
+- PostgreSQL — relational database
+- Docker Compose — service orchestration
+- SQLAlchemy ORM — database modeling
+- Pydantic — data validation
+```
 ✅ Future Enhancements
-Alembic migrations
-JWT authentication
-Pagination & filtering
-CI/CD pipeline
-
+```
+- Alembic migrations
+- JWT authentication
+- Pagination & filtering
+- CI/CD pipeline
+```
 📖 Notes
 #### Default database connection is configured in core/database.py.
 #### Update docker-compose.yml with your own Postgres credentials if needed.
