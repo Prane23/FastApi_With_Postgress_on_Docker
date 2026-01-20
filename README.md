@@ -117,4 +117,6 @@ CI/CD pipeline
 #### Default database connection is configured in core/database.py.
 #### Update docker-compose.yml with your own Postgres credentials if needed.
 ---
-
+## 🙌 Author  
+**Prashant**  
+FastAPI | PostgreSQL | Docker | RESTful APIs
