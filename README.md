@@ -1,4 +1,4 @@
-📘 FastAPI + PostgreSQL + Docker
+# 📘 FastAPI + PostgreSQL + Docker
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-teal?logo=fastapi)
@@ -8,7 +8,7 @@
 A fully containerized FastAPI application running with PostgreSQL using Docker Compose.
 This project demonstrates a clean, production‑ready setup for building, running, and deploying a backend API with a relational database.
 
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 #### Docker Desktop installed
 #### Python 3.10+ (optional for local development)
 #### Git
@@ -41,7 +41,7 @@ http://localhost:8000/docs	Swagger UI
 http://localhost:8000/redoc	ReDoc documentation
 http://localhost:8000/students	Student API endpoints
 ```
-🧪 Running Locally (Without Docker)
+## 🧪 Running Locally (Without Docker)
 #### Install dependencies
 python -m pip install -r requirements.txt
 #### Load environment variables
@@ -51,23 +51,23 @@ load_dotenv()
 #### Start FastAPI
 uvicorn app.main:app --reload
 
-🧰 Useful Docker Commands
-#Stop containers:
-docker compose down
-#Stop & remove volumes:
-docker compose down --volumes
-#Rebuild without cache:
-docker compose build --no-cache
-#View logs:
-docker logs fastapi_app
-
-🚀 Features
+## 🧰 Useful Docker Commands
+- #Stop containers:
+- docker compose down
+- #Stop & remove volumes:
+- docker compose down --volumes
+- #Rebuild without cache:
+- docker compose build --no-cache
+- #View logs:
+- docker logs fastapi_app
+---
+## 🚀 Features
 - FastAPI backend with automatic interactive API docs (`/docs` and `/redoc`)
 - PostgreSQL database running in a Docker container
 - SQLAlchemy ORM models and Pydantic schemas
 - Modular project layout (`core/`, `models/`, `schemas/`, `crud.py`, `main.py`)
 - Docker Compose for easy orchestration
-
+---
 ## 📂 Project Structure
 ```
 FastApi_With_Postgress_on_Docker/
@@ -88,10 +88,11 @@ FastApi_With_Postgress_on_Docker/
 ├── dbContainer.yml  # Postgress container
 └── requirements.txt    # Packages needed for fastapi
 ```
+---
 ## [Swagger docs]
 ![FastAPI with Postgres](assets/fastapi_postgress_docker.png)
-
-🧩 Example API Endpoints
+---
+## 🧩 Example API Endpoints
 ```
 ✅ Create Student POST /students/
 ✅ Get All Students GET /students/
@@ -114,9 +115,9 @@ FastApi_With_Postgress_on_Docker/
 - Pagination & filtering
 - CI/CD pipeline
 ```
-📖 Notes
-#### Default database connection is configured in core/database.py.
-#### Update docker-compose.yml with your own Postgres credentials if needed.
+## 📖 Notes
+ - Default database connection is configured in core/database.py.
+ - Update docker-compose.yml with your own Postgres credentials if needed.
 ---
 ## 🙌 Author  
 **Prashant**  
